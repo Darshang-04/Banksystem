@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import axios from 'axios';
 import styles from './Register.module.css';
+import { useNavigate } from 'react-router-dom';
 
 function Register() {
   const backendUrl = import.meta.env.VITE_BACKEND_URL;
+  const navigate = useNavigate()
   const [form, setForm] = useState({ name: '', email: '', password: '', role: 'customer' });
 
   const handleChange = e => setForm({ ...form, [e.target.name]: e.target.value });
@@ -12,6 +14,7 @@ function Register() {
     try {
       const res = await axios.post(`${backendUrl}/api/auth/register`, form);
       alert('Registration successful');
+      navigate('/login')
     } catch (err) {
       alert(err.response?.data?.message || 'Registration failed');
     }
