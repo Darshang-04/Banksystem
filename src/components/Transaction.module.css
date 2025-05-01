@@ -1,0 +1,86 @@
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #f9f9f9;
+  }
+  
+  .balanceBox {
+    background-color: #eef;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+  
+  .buttonBox {
+    margin-bottom: 20px;
+  }
+  
+  .depositBtn, .withdrawBtn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .depositBtn {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .withdrawBtn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .modal {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
+  
+  .modal input {
+    padding: 8px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .modal button {
+    padding: 8px 12px;
+    margin-right: 10px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 14px;
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .list li {
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .green {
+    background-color: #e0ffe0;
+    color: #2e7d32;
+  }
+  
+  .red {
+    background-color: #ffe0e0;
+    color: #c62828;
+  }
+  
